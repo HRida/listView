@@ -14,7 +14,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        ArrayAdapter adapter = new ArrayAdapter<String>(this,R.layout.listview, carsArray);
+        ArrayAdapter adapter = new ArrayAdapter<String>(this, R.layout.listview, R.id.label, carsArray);
 
         ListView listView = (ListView) findViewById(R.id.cars_list);
 
